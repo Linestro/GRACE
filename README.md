@@ -5,6 +5,14 @@ cd GRACE
 mkdir -p bin/
 mkdir -p gapbs/bin/
 mkdir -p gapbs/cluster/
+mkdir -p dataset/anime
+mkdir -p dataset/clothes
+mkdir -p dataset/dblp
+mkdir -p dataset/movie
+mkdir -p dataset/office
+mkdir -p dataset/sports
+mkdir -p dataset/steam
+mkdir -p dataset/twitch
 
 export HOME=$(pwd)
 
