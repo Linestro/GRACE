@@ -101,21 +101,13 @@ python steam_preprocess.py -i steam/australian_users_items.json
 cd $HOME
 
 ## Apply MERCI Dataset Cleaning [10 minutes]
-./run_clean_dataset.sh anime &
-./run_clean_dataset.sh steam &
-./run_clean_dataset.sh movie &
-./run_clean_dataset.sh twitch &
-wait
-
+./run_group_clean_dataset.sh
 
 ### Preparing Mixed Datasets [120 minutes]
 ./run_merge_all.sh
 
 ### Generate ICG with training set [180 minutes]
-mkdir -p graph/
-./run_build_graph_group.sh &
-./run_build_graph_merged_group.sh &
-wait
+./run_build_graph_all.sh
 
 ### Reformat into inference streaming set [5 minutes]
 ./run_group_reformat.sh
