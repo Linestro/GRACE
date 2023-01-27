@@ -6,6 +6,7 @@ grace_cluster/*
 graph/*
 hbm_only_*_log/*
 MERCI/
+MERCI/*
 metis/metis-5.1.0/cluster/*
 post_trace/*
 result/*
