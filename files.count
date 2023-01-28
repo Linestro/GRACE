@@ -1,0 +1,16 @@
+Count: anime
+7803529 ./dataset/anime/rating_postprocess.csv
+Count: steam
+5083277 ./dataset/steam/australian_users_items_postprocess.csv
+Count: movie
+19964833 ./dataset/movie/rating_postprocess.csv
+Count: clothes
+339066937 ./dataset/clothes/amazon_Clothing_Shoes_and_Jewelry_postprocess.csv
+Count: twitch
+1833942 ./dataset/twitch/100k_a_postprocess.csv
+Count: sports
+574468784 ./dataset/sports/amazon_Sports_and_Outdoors_postprocess.csv
+Count: office
+239167201 ./dataset/office/amazon_Office_Products_postprocess.csv
+Count: dblp
+29733930 ./dataset/dblp/dblp_postprocess.csv
