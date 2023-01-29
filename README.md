@@ -111,6 +111,9 @@ cd $HOME
 ## Apply MERCI Dataset Cleaning [10 minutes]
 ./run_group_clean_dataset.sh
 
+## Verify datasets (optional)
+./count_lines_in_dataset.sh # For dataset verification, check the output of the script against ./files.count
+
 ### Preparing Mixed Datasets [120 minutes]
 ./run_merge_all.sh
 
