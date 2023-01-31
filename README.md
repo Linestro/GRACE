@@ -1,7 +1,10 @@
+## **Step 1**: Create necessary folders GRACE/ and GRACE/MERCI/
 
 git clone https://github.com/Linestro/GRACE.git
 
 cd GRACE
+
+git clone https://github.com/SNU-ARC/MERCI.git
 
 mkdir -p bin/
 
@@ -27,10 +30,9 @@ mkdir -p dataset/twitch
 
 export HOME=$(pwd)
 
-## Preparing Single Datasets
+## **Step 2**: Download and process datasets
 
 ### DBLP, Sports, Office, Clothes [30 minutes]
-git clone https://github.com/SNU-ARC/MERCI.git
 
 cd MERCI
 
@@ -160,20 +162,22 @@ python steam_preprocess.py -i steam/australian_users_items.json
 
 cd $HOME
 
-## Apply MERCI Dataset Cleaning [10 minutes]
+## **Step 3**: Perform datasets cleaning same as MERCI [10 minutes]
 ./run_group_clean_dataset.sh
 
 ## Verify datasets (optional)
 ./count_lines_in_dataset.sh     # For dataset verification, check the output of the script against ./files.count
 
-## Preparing Mixed Datasets [120 minutes]
+## **Step 4**: Prepare mixed datasets [120 minutes]
 ./run_merge_all.sh
 
-## Generate ICG with training set [180 minutes]
+## **Step 5**: Generate ICG with training set [180 minutes]
 ./run_build_graph_all.sh
 
-## Reformat into inference streaming set [5 minutes]
+## **Step 6**: Reformat datasets into inference streaming set [5 minutes]
 ./run_group_reformat.sh
+
+## **Step 7**: Reproduce memory access count for GRACE, MERCI, SPACE
 
 ## Inference with HBM only count (GRACE) [10 minutes]
 ./Fig10_grace.sh
@@ -184,13 +188,15 @@ cd $HOME
 ## Inference with HBM only count (SPACE) [10 minutes]
 ./Fig10_space.sh
 
+## **Step 8**: Reproduce memory access count for Metis (optional)
+
 ## Install Metis library
 sudo ./metis_installation.sh    # make install metis needs sudo
 
 ## Inference with HBM only count (Metis) (optional) [360 minutes]
 ./Fig10_metis.sh
 
-## Plot figure [1 minute]
+## **Step 9**: Reproduce Fig. 10 in the paper using the memory access count collected in steps 7 and 8 [1 minute]
 cd Fig10_plot
 
 python fig10.py
