@@ -5,7 +5,7 @@ prepare_metis(){
     workload=$1
     hbm_caps=("1.0")
     ## METIS
-    export METIS_DLL=/usr/local/lib/libmetis.so
+    export METIS_DLL=$PWD/metis/metis-5.1.0/build/Linux-x86_64/libmetis/libmetis.so
     line=$(ls -l | sed -n 3p result/base/base_result_${workload}_base/a_sls_graph_${workload}_base.log | sed 's/[^0-9]*//g')
     cd metis/metis-5.1.0;
     how_many_clusters=$((${line} / 128))

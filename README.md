@@ -164,7 +164,7 @@ cd $HOME
 ./run_group_clean_dataset.sh
 
 ## Verify datasets (optional)
-./count_lines_in_dataset.sh # For dataset verification, check the output of the script against ./files.count
+./count_lines_in_dataset.sh     # For dataset verification, check the output of the script against ./files.count
 
 ## Preparing Mixed Datasets [120 minutes]
 ./run_merge_all.sh
@@ -183,6 +183,9 @@ cd $HOME
 
 ## Inference with HBM only count (SPACE) [10 minutes]
 ./Fig10_space.sh
+
+## Install Metis library
+sudo ./metis_installation.sh    # make install metis needs sudo
 
 ## Inference with HBM only count (Metis) (optional) [360 minutes]
 ./Fig10_metis.sh
