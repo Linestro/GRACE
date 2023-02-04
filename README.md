@@ -84,13 +84,13 @@ python3 amazon_parse_divide_filter.py Sports_and_Outdoors
 
 cd $HOME/
 
-python port_dataset.py dblp
+python3 port_dataset.py dblp
 
-python port_dataset.py amazon_Office_Products
+python3 port_dataset.py amazon_Office_Products
 
-python port_dataset.py amazon_Clothing_Shoes_and_Jewelry
+python3 port_dataset.py amazon_Clothing_Shoes_and_Jewelry
 
-python port_dataset.py amazon_Sports_and_Outdoors
+python3 port_dataset.py amazon_Sports_and_Outdoors
 
 mkdir -p $HOME/dataset/dblp
 
@@ -143,20 +143,20 @@ cd dataset
 ### Anime [10 minutes]
 cd anime && unzip archive.zip && sed -i '1d' rating.csv && cd -
 
-python dataset_preprocess.py -i anime/rating.csv
+python3 dataset_preprocess.py -i anime/rating.csv
 
 ### Twitch [5 minutes]
-python dataset_preprocess.py -i twitch/100k_a.csv
+python3 dataset_preprocess.py -i twitch/100k_a.csv
 
 ### Movie [5 minutes]
 cd movie && unzip ml-20m.zip && mv ml-20m/* . && rm -r ml-20m && sed -i '1d' ratings.csv && mv ratings.csv rating.csv && cd -
 
-python dataset_preprocess.py -i movie/rating.csv
+python3 dataset_preprocess.py -i movie/rating.csv
 
 ### Steam [120 minutes]
 cd steam && gunzip australian_users_items.json.gz && cd -
 
-python steam_preprocess.py -i steam/australian_users_items.json
+python3 steam_preprocess.py -i steam/australian_users_items.json
 
 
 
@@ -199,9 +199,9 @@ sudo ./metis_installation.sh    # make install metis needs sudo
 ## **Step 9**: Reproduce Fig. 10 in the paper using the memory access count collected in steps 7 and 8 [1 minute]
 cd Fig10_plot
 
-python fig10.py
+python3 fig10.py
 
-python fig10_without_Metis.py [if skip Metis]
+python3 fig10_without_Metis.py [if skip Metis]
 
 ## Result figure will be in fig10.png
 
