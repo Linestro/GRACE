@@ -1,5 +1,5 @@
-set -e
-set -x
+# set -e
+# set -x
 
 
 cd metis/metis-5.1.0;
