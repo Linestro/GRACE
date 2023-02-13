@@ -8,8 +8,8 @@ set -x
 
 
 mkdir -p graph/
-./run_build_graph_group.sh 
-./run_build_graph_merged_group.sh 
+./run_build_graph_group.sh &
+./run_build_graph_merged_group.sh &
 
 wait
 
