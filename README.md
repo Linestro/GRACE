@@ -4,6 +4,8 @@ git clone https://github.com/Linestro/GRACE.git
 
 cd GRACE
 
+pip3 install -r requirement.txt
+
 git clone https://github.com/SNU-ARC/MERCI.git
 
 mkdir -p bin/

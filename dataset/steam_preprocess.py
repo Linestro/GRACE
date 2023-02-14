@@ -7,7 +7,6 @@ import os
 import math
 import glob
 from collections import defaultdict
-import pickle
 import matplotlib
 import matplotlib.pyplot as plt
 import tqdm
