@@ -1,6 +1,6 @@
 ## Required packages:
 
-cmake, python3 (3.7.6 preferred)
+gcc, cmake, python3 (Python 3.9 preferred)
 
 ## **Step 1**: Create necessary folders GRACE/ and GRACE/MERCI/
 
