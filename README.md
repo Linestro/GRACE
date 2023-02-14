@@ -1,3 +1,7 @@
+## Required packages:
+
+cmake, python3 (3.7.6 preferred)
+
 ## **Step 1**: Create necessary folders GRACE/ and GRACE/MERCI/
 
 git clone https://github.com/Linestro/GRACE.git
