@@ -194,7 +194,7 @@ cd $HOME
 ## Inference with HBM only count (SPACE) [10 minutes]
 ./Fig10_space.sh
 
-## **Step 8**: Reproduce memory access count for Metis (optional)
+## **Step 8**: Reproduce memory access count for Metis (optional, running Metis needs a 256GB main memory machine)
 
 ## Install Metis library
 sudo ./metis_installation.sh    # make install metis needs sudo
