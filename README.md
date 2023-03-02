@@ -1,3 +1,7 @@
+GRACE: A Scalable Graph-Based Approach to Accelerating Recommendation Model Inference
+===================
+This directory contains the artifact of the ASPLOS'23 paper GRACE: A Scalable Graph-Based Approach to Accelerating Recommendation Model Inference. 
+
 If you find this repo useful, please cite the following paper: 
 ```
 @inproceedings{ye2023grace,
