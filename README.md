@@ -1,3 +1,14 @@
+If you find this repo useful, please cite the following paper: 
+```
+@inproceedings{ye2023grace,
+  title={GRACE: A Scalable Graph-Based Approach to Accelerating Recommendation Model Inference},
+  author={Ye, Haojie and Vedula, Sanketh and Chen, Yuhan and Yang, Yichen and Bronstein, Alex and Mudge, Trevor and Dreslinski, Ronald and Talati, Nishil},
+  booktitle={Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 3)},
+  pages={},
+  year={2023}
+}
+```
+
 ## Required packages:
 
 g++ (9.4.0 preferred), cmake, python3 (Python 3.9 preferred)
